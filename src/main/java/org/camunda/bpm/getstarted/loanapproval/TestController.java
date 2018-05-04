@@ -26,6 +26,6 @@ public class TestController {
     public String startProcess(@PathVariable(name = "name") String name){
         logger.info("name :: "+name);
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(name);
-        return processInstance.getId();;
+        return processInstance.getId();
     }
 }
